@@ -7,7 +7,7 @@ type UserCommand struct {
 	Arguments []string
 }
 
-func argumentFilter(commandList []string) UserCommand {
+func ArgumentFilter(commandList []string) UserCommand {
 	regexpValidator := regexp.MustCompile("(?m)-")
 
 	commandSet := false

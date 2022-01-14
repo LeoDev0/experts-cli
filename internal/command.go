@@ -49,7 +49,7 @@ func (cr *CommandRoot) Start(commandList []Command) error {
 
 	userPassedArguments := os.Args[1:]
 
-	userCommand := argumentFilter(userPassedArguments)
+	userCommand := ArgumentFilter(userPassedArguments)
 
 	if userCommand.Command == "" {
 		cr.ShowHelp()
